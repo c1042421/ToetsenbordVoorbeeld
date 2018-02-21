@@ -64,9 +64,8 @@ public class ToetsenBord {
 
     @Override
     public String toString() {
-        return "Het toetsenbord met serienummer " + serienummer + " kost € " + prijs;
+        String draad = isDraadloos() ? "wel" : "niet";
+        return "Het toetsenbord met serienummer " + serienummer + " kost € " + prijs + ". \n" +
+                "Het toetsenbord is " + draad + " draadloos";
     }
-    
-    
-    
 }
